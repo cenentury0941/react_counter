@@ -30,9 +30,9 @@ export function Counter()
     return (
         <div className="Counter_Back" ref={back} style={{backgroundImage: img }}>
             <div className="Counter_Controls">
-            <Button onClick={decrease} color="error" variant="contained" className="Counter_Button">-</Button>
+            <Button onClick={decrease} color="error" variant="contained" className="Counter_Button" style={{ borderRadius: "20%", fontSize: "3rem"}}>-</Button>
             <div className="Counter_Label"><p>{count}</p></div>
-            <Button onClick={increase} color="success" variant="contained" className="Counter_Button">+</Button>
+            <Button onClick={increase} color="success" variant="contained" className="Counter_Button" style={{ borderRadius: "20%", fontSize: "3rem"}}>+</Button>
             </div>
         </div>
     );
